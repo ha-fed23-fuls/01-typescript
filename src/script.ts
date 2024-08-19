@@ -50,3 +50,23 @@ function trafficLights(): void {
 	// Alternativ: i % 3
 }
 trafficLights()
+
+
+type UserSettings = {
+	name: string;
+	id: number;
+	firstTime: boolean;
+	favColor?: string;
+}
+
+let kajsa: UserSettings = {
+	name: 'Kajsa Warg',
+	id: 567,
+	firstTime: false,
+	favColor: 'pink'
+}
+let bamse: UserSettings = {
+	name: 'Bamse',
+	id: 12341,
+	firstTime: true,
+}
