@@ -70,3 +70,31 @@ let bamse: UserSettings = {
 	id: 12341,
 	firstTime: true,
 }
+
+
+// 5 Skriv ett program som skriver ut talen 1 till 20 och om varje tal är udda eller jämnt.
+function printNumbers(): void {
+	for( let i:number=1; i<=20; i++ ) {
+		if( i % 2 === 0 ) {
+			console.log(i + ' är jämnt')
+		}
+		else {
+			console.log(i + ' är udda')
+		}
+	}
+}
+
+printNumbers()
+
+
+// 6 Pelle har 100 kronor. Varje dag köper Pelle en frukt för 7 kronor. Hur många dagar räcker pengarna? Bygg ett program som besvarar frågan.
+function fruitCalculation(): void {
+	let moneyLeft: number = 100
+	const fruitPrice: number = 7
+	let days: number
+	for( days = 0; moneyLeft >= fruitPrice; days++ ) {
+		moneyLeft -= fruitPrice
+	}
+	console.log(`Pengarna räckte i ${days} dagar.`)
+}
+fruitCalculation()
